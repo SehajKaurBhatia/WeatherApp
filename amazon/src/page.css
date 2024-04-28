@@ -1,0 +1,65 @@
+body{
+    overflow: hidden;
+}
+.container2{
+    background-color:rgb(225, 231, 230);
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100vh;
+    z-index:-1;
+}
+.pg1{
+    width:1100px;
+    height:300px;
+    margin-left:20px;
+    margin-top:130px;
+    background-color: white;
+}
+.pg2{
+    width:1100px;
+    height:90px;
+    margin-left:20px;
+    margin-top:20px;
+    background-color: white;
+}
+.pg3{
+    background-color: white;
+    width:100%;
+    height:200px;
+    margin-left:0px;
+    margin-top:20px;
+}
+.SignIn{
+    background-image:linear-gradient(rgb(234, 222, 59),rgb(255,153,0)) ;
+    width:170px;
+    height:30px;
+    border:2px solid rgb(230, 177, 63);
+    border-radius:7px;
+    margin-left:680px;
+    margin-top:20px;
+    font-weight:600;
+    cursor: pointer;
+}
+.bt1{
+    padding:7px 15px;
+    border-radius:5px;
+    border:transparent;
+    box-shadow: 2px 3px 10px 0px rgba(163, 160, 160,0.5) ;
+    background-color: rgb(246, 213, 46);
+    cursor: pointer;
+}
+.pg1 .btn1:hover{
+   
+    background-color: rgb(8, 7, 4);
+}
+.bt2{
+    padding:7px 15px;
+    color:black;
+    border-radius:5px;
+    border:1px solid rgb(200, 198, 198);
+    box-shadow: 2px 3px 10px 0px rgba(163, 160, 160,0.5) ;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}

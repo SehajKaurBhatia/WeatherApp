@@ -1,0 +1,91 @@
+.content{
+    z-index:-1;
+    display:flex;
+    flex-direction:column;
+    gap:99px;
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100%;
+    overflow: hidden;
+}
+.sq1{
+    width:40px;
+    height:40px;
+    border:2px solid rgb(232, 210, 110);
+    background-color:rgb(225, 222, 191);
+    position:relative;
+    animation:move 7s linear infinite;
+    
+}
+.sq2{
+    width:40px;
+    height:40px;
+    border:2px solid rgb(232, 210, 110);
+    background-color:rgb(225, 222, 191);
+    
+   
+    position:relative;
+    animation:move 7s linear infinite;
+    animation-delay:1s;
+}
+.sq3{
+    width:40px;
+    height:40px;
+   
+    border:2px solid rgb(232, 210, 110);
+    background-color:rgb(225, 222, 191);
+    position:relative;
+    animation:move 7s linear infinite;
+    animation-delay:2s;
+}
+.sq4{
+    width:40px;
+    height:40px;
+    border:2px solid rgb(232, 210, 110);
+    background-color:rgb(225, 222, 191);
+    position:relative;
+    animation:move 7s linear infinite;
+    animation-delay:3s;
+}
+.sq5{
+    width:40px;
+    height:40px;
+    border-radius:2px;
+    border:2px solid rgb(232, 210, 110);
+    background-color:rgb(225, 222, 191);
+    position:relative;
+    animation:move 7s linear infinite;
+    animation-delay:4s;
+}
+.sq6{
+    width:40px;
+    height:40px;
+   
+    border:2px solid rgb(232, 210, 110);
+    background-color:rgb(225, 222, 191);
+    position:relative;
+    animation:move 7s linear infinite;
+    animation-delay:5s;
+}
+@keyframes move{
+    0%{
+        left:0; transform:rotate(0deg);
+    }
+    25%{
+        left:25% ; transform:rotate(90deg);
+    
+    }
+    50%{
+        left:50% ; transform:rotate(180deg);
+    
+    }
+    75%{
+        left:75% ; transform:rotate(270deg);
+    
+    }
+    100%{
+        left:100% ; transform:rotate(360deg);
+    
+    }
+}

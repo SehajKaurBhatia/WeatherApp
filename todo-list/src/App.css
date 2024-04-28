@@ -1,0 +1,25 @@
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#ffe5ef,#ffc2d1,#ffb3c6,#fa9db4);
+  color:white;
+}
+button{
+  background: rgb(216, 81, 103);
+  border-radius:5px;
+  padding: 5px 10px;
+  border-color:rgb(232, 225, 225);
+  color:aliceblue;
+}
+button:focus,button:focus-visible{
+  border:2px solid;
+  border-color:rgb(109, 191, 227);
+}
+.container{
+  padding:10px 50px;
+  border:5px solid white;
+  border-radius: 15px;
+}

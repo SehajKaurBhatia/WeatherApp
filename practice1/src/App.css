@@ -1,0 +1,23 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App1{
+  text-shadow: -7px 12px 10px rgba(98, 91, 91, 0.7) ;
+  position:relative;
+animation:text 1s linear infinite;
+}
+@keyframes text{
+  0%{
+    top:0;
+  }
+  50%{
+    top:-30px;
+  }
+  100%{
+    top:0;
+  }
+}

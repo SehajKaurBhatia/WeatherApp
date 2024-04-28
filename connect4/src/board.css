@@ -1,0 +1,30 @@
+.board {
+    display: grid;
+    grid-template-columns: repeat(7, 60px); /* Adjust width of slots */
+    grid-template-rows: repeat(6, 60px); /* Adjust height of slots */
+    gap: 5px; /* Adjust gap between slots */
+    border:10px solid rgb(158, 155, 155);
+    padding:20px 20px;
+    border-radius:20px;
+}
+
+.slot {
+    width: 50px; /* Adjust width of slots */
+    height: 50px; /* Adjust height of slots */
+    border-radius: 50%; /* Make slots circular */
+    background-color: #ffffff; /* Default color of slots */
+    border: 1px solid #000000; /* Border color of slots */
+    cursor: pointer;
+}
+
+.slot.empty {
+    background-color: #c0c0c0; /* Empty slot color */
+}
+
+.slot.red {
+    background-color: #ff4136; /* Red token color */
+}
+
+.slot.yellow {
+    background-color: #ffdc00; /* Yellow token color */
+}

@@ -27,10 +27,10 @@ function Board() {
 
     const checkForWin = (row, col) => {
         if (
-            checkDirection(row, col, 0, 1) || // Check horizontally
-            checkDirection(row, col, 1, 0) || // Check vertically
-            checkDirection(row, col, 1, 1) || // Check diagonally (top-left to bottom-right)
-            checkDirection(row, col, 1, -1) // Check diagonally (top-right to bottom-left)
+            checkDirection(row, col, 0, 1) || 
+            checkDirection(row, col, 1, 0) || 
+            checkDirection(row, col, 1, 1) || 
+            checkDirection(row, col, 1, -1) 
         ) {
             return true;
         }
@@ -39,16 +39,16 @@ function Board() {
 
     const checkDirection = (row, col, delRow, delCol) => {
         const token = currentPlayer === 'red' ? 'red' : 'yellow';
-        let count = 1; // Count of consecutive tokens
+        let count = 1;
         let i = row + delRow;
         let j = col + delCol;
-        // Check in one direction
+      
         while (i >= 0 && i < 6 && j >= 0 && j < 7 && document.querySelector(`.slot[data-row="${i}"][data-column="${j}"]`).classList.contains(token)) {
             count++;
             i += delRow;
             j += delCol;
         }
-        // Check in the opposite direction
+       
         i = row - delRow;
         j = col - delCol;
         while (i >= 0 && i < 6 && j >= 0 && j < 7 && document.querySelector(`.slot[data-row="${i}"][data-column="${j}"]`).classList.contains(token)) {
